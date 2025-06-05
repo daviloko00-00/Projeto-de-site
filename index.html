@@ -134,16 +134,29 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      transition: transform 0.2s, background 0.3s;
+      transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 0 transparent;
     }
 
     .buttons button:hover {
       transform: scale(1.05);
     }
 
+    /* Cores dos botões */
     .github { background: #24292e; }
     .instagram { background: #e1306c; }
     .linkedin { background: #0077b5; }
+
+    /* Efeito de brilho no hover */
+    .github:hover {
+      box-shadow: 0 0 15px 5px rgba(36, 41, 46, 0.7);
+    }
+    .instagram:hover {
+      box-shadow: 0 0 15px 5px rgba(225, 48, 108, 0.7);
+    }
+    .linkedin:hover {
+      box-shadow: 0 0 15px 5px rgba(0, 119, 181, 0.7);
+    }
 
     footer {
       text-align: center;
@@ -164,7 +177,9 @@
     }
   </style>
 </head>
+    <link rel="icon" type="image/png" href="imagemlegal muito legal.png">
 <body>
+
   <button class="menu-btn" onclick="toggleMenu()" id="menuIcon">☰</button>
 
   <nav id="menu">
@@ -203,5 +218,6 @@
       icon.classList.toggle("light", opened);
     }
   </script>
+
 </body>
 </html>
