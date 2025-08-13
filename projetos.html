@@ -114,6 +114,28 @@
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: relative;
+      padding-right: 120px;
+    }
+
+    .repo-btn {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .repo-btn:hover {
+      background-color: #2563eb;
     }
 
     footer {
@@ -132,42 +154,55 @@
       nav.active {
         left: 0;
       }
+      li {
+        padding-right: 15px;
+        padding-bottom: 50px;
+      }
+      .repo-btn {
+        top: auto;
+        bottom: 15px;
+        right: 15px;
+        transform: none;
+      }
     }
     .darkmode-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 1001;
-  background: none;
-  border: none;
-  color: var(--dark);
-  transition: color 0.3s, transform 0.3s;
-}
-.darkmode-btn.active {
-  color: gold;
-  transform: rotate(360deg) scale(1.2);
-}
-body, header, nav, .content, footer {
-  transition: background 0.6s, color 0.6s;
-}
-body.dark {
-  --bg: #181a1b;
-  --white: #23272a;
-  --dark: #f0f2f5;
-  --gray: #aaa;
-  --accent: #60a5fa;
-  background: var(--bg);
-  color: var(--dark);
-}
-body.dark header,
-body.dark nav,
-body.dark .content,
-body.dark footer {
-  background: var(--white);
-  color: var(--dark);
-}
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      z-index: 1001;
+      background: none;
+      border: none;
+      color: var(--dark);
+      transition: color 0.3s, transform 0.3s;
+    }
+    .darkmode-btn.active {
+      color: gold;
+      transform: rotate(360deg) scale(1.2);
+    }
+    body, header, nav, .content, footer {
+      transition: background 0.6s, color 0.6s;
+    }
+    body.dark {
+      --bg: #181a1b;
+      --white: #23272a;
+      --dark: #f0f2f5;
+      --gray: #aaa;
+      --accent: #60a5fa;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    body.dark header,
+    body.dark nav,
+    body.dark .content,
+    body.dark footer {
+      background: var(--white);
+      color: var(--dark);
+    }
+    body.dark .repo-btn {
+      background-color: var(--accent);
+    }
   </style>
 </head>
     <link rel="icon" type="image/png" href="imagemlegal muito legal.png">
@@ -190,9 +225,30 @@ body.dark footer {
   <main>
     <h2>Alguns dos meus projetos:</h2>
     <ul>
-      <li><strong>Projeto 1:</strong> Cálculo de Frete — sistema fictício para logística.</li>
-      <li><strong>Projeto 2:</strong> Jokenpô — jogo simples em Python.</li>
-      <li><strong>Projeto 3:</strong> Macaco Prego — em breve mais detalhes 🐒.</li>
+      <li>
+        <strong>Projeto 1:</strong> Cálculo de Frete — sistema fictício para logística.
+        <a href="https://github.com/daviloko00-00/Calculo-de-frete" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
+      <li>
+        <strong>Projeto 2:</strong> Jokenpô — jogo simples em Python.
+        <a href="https://github.com/daviloko00-00/Jokempo-em-python" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
+      <li>
+        <strong>Projeto 3:</strong> Macaco Prego — em breve mais detalhes 🐒.
+        <a href="https://github.com/seu-usuario/projeto3" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
+      <li>
+        <strong>Projeto 4:</strong> Criptografia de Pastas — criptografa pastas com senha.
+        <a href="https://github.com/daviloko00-00/Criptografia-de-pastas-By-S1nn3r" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
+      <li>
+        <strong>Projeto 5:</strong> Phantom Core - Ferramenta de Cybersegurança
+        <a href="https://github.com/daviloko00-00/Phantom-core" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
+      <li>
+        <strong>Projeto 6:</strong> Anesthesia - Jogo em Python sendo desenvolvido por S1nn3r
+        <a href="https://github.com/daviloko00-00/AnesThesia" class="repo-btn" target="_blank">Ver no GitHub</a>
+      </li>
     </ul>
   </main>
 
